@@ -100,7 +100,8 @@ return [
     | Notice: If you set this to null you should remove 'exp' element from 'required_claims' list.
     |
     */
-
+     // para deixar o token sem tempo para expirar e so colocar null no lugar do 60
+     // e depois comentar o 'exp' na linha 153. 
     'ttl' => env('JWT_TTL', 60),
 
     /*

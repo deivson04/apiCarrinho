@@ -63,7 +63,8 @@ class AuthController extends Controller
     {
         return $this->respondWithToken(auth()->refresh());
     }
-
+    
+    // faz alteração do tempodo token.
     /**
      * Get the token array structure.
      *

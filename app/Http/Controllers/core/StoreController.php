@@ -31,6 +31,13 @@ class StoreController extends Controller
         //dessa forma esta indo buscar pelo request! 
         //$data = $request->all();
         //$data = $request->input('rua'); 
+        
+        $validation = \Validator::make($request->all(), [
+            'cnpj' => 'requered'
+        ]);
+
+          return
+        
         $data = $request->all();
         
         store::create($data);        

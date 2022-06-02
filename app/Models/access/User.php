@@ -39,9 +39,13 @@ class User extends Authenticatable implements JWTSubject
      *
      * @return array
      */
-    public function getJWTCustomClaims()
+     //essa função é pra referencia os nomes que vãopassar pelo token.
+     public function getJWTCustomClaims()
     {
-        return [];
+        return [
+            'id' => $this->id,
+            'email' => $this->email
+        ];
     }
 }
 
