@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group([
 
-    'middleware' => ['jwt.verify'],
+    'middleware' => 'api',
     'prefix' => 'v1'
 ], function ($router) {
 Route::post('login', [AuthController::class, 'login']);

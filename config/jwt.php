@@ -102,7 +102,7 @@ return [
     */
      // para deixar o token sem tempo para expirar e so colocar null no lugar do 60
      // e depois comentar o 'exp' na linha 153. 
-    'ttl' => env('JWT_TTL', 60),
+    'ttl' => env('JWT_TTL', null),
 
     /*
     |--------------------------------------------------------------------------
@@ -151,7 +151,7 @@ return [
     'required_claims' => [
         'iss',
         'iat',
-        'exp',
+        //'exp',
         'nbf',
         'sub',
         'jti',

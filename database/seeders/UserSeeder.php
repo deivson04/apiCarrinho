@@ -18,7 +18,9 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'dayvson',
             'email' => 'dayvson04@hotmail.com',
-            'password' => '$2a$12$hxUjNakMzYaSTKBgoFEw8uED9UwJ4qf.tWDFdCXKHVGLD8Bs5xYLm'
+            'password' => '$2a$12$69RZzcUm/g1zMxmMqG3hEOaXjdqXLh79j8UYOTVjzuxcr3YkzYfwC'
+            
+            
                                               
             ]);
     }

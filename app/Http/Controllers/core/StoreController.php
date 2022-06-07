@@ -33,10 +33,12 @@ class StoreController extends Controller
         //$data = $request->input('rua'); 
         
         $validation = \Validator::make($request->all(), [
-            'cnpj' => 'requered'
+            'number' => 'nullable|min:3'
         ]);
 
-          return
+          if($validation->fails()){
+              return response()->json([$validation->errors()], 422);
+            };
         
         $data = $request->all();
         
